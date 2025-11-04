@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Web App</title>
-    <link rel="stylesheet" href="style/styles.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="style/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  <div id="page">
+    <section class="top">
+      <div class="logo">
+        <p>WeatherAt</p>
+      </div>
+      <div class="bar">
+          <div class="error" style="display: none"></div>
+        <form class="search_form">
+          <input type="text" class="input_city" placeholder="Enter City Name" />
+          <button type="submit" class="search_btn">Search</button>
+        </form>
+          <div class="place"></div>
+      </div>
+    </section>
+    <section class="current_weather">
+      <div class="temp_details">
+        <div class="temp_box">
+          <img src="images/thermometer.png" alt="" class="thermometer" />
+          <div class= "temp1"></div>
+        </div>
+        <div class="cloud_box">
+          <div class="weatherimage"><img src="images/weather.gif" alt="" class="cloud_img" /></div>
+        <div class="cloud_desc-box">
+          <img src="images/product-description.png" alt="" class="desc_img" />
+          <div class="desc"></div>
+        </div>
+        </div>
+      </div>
+
+      <div class = "accessories">
+      <div class="hum_desc">
+        <div class="box1">
+          <img src="images/wind.gif" alt="" class="wind_speed_img">
+        <div class="air"></div>
+      </div>
+        <div class="box2">
+          <img src="images/water-drops.gif" alt="" class="humidity_img" />
+          <div class="water"></div>
+        </div>
+        
+        <div class="box3">
+          <img src="images/gauge.png" alt="" class="gauge">
+        <p class="rainguage"></p></div>
+        <div class="box4">
+          <img src="images/radiator.png" alt="" class="radiator">
+        <p class="weather_rad">55</p></div>
+      </div>
+      <div class="location_sec">
+      <div class="other_locations">
+        <div class="location">
+          24
+        </div>
+        <div class="location">
+
+        </div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+      </div>
+      </div>
+    </div>
+    
+    </section>
+</div>
     <script src="script/script.js"></script>
-</body>
+  </body>
 </html>
