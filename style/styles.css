@@ -30,8 +30,9 @@
 .bar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 10px 0;
+  gap: 10%;
 }
 
 .bar h2 {
@@ -88,7 +89,6 @@
   backdrop-filter: blur(4px);
   background: linear-gradient(#f7f7f727, rgba(255, 255, 255, 0.705));
   border-radius: 55px;
-  width: 65%;
   justify-content: center;
   height: 250px;
   margin: 2%;
@@ -124,10 +124,11 @@
   width: 45%;
   height: fit-content;
   margin: 1%;
+  padding: 1%;
 }
 
 .cloud_img {
-  height: 200px;
+  height: 160px;
 }
 
 .humidity {
@@ -174,7 +175,6 @@
   height: 40%;
   gap: 3%;
   margin: 2px;
-  width: 28%;
 }
 
 .box1,
@@ -191,7 +191,7 @@
 }
 
 .humidity_img {
-  height: 50px;
+  height: 30px;
 }
 
 .desc_img {
@@ -199,7 +199,7 @@
 }
 
 .wind_speed_img {
-  height: 40px;
+  height: 30px;
 }
 
 .location_sec {
@@ -219,11 +219,11 @@
 }
 
 .gauge {
-  height: 40px;
+  height: 30px;
 }
 
 .radiator {
-  height: 40px;
+  height: 30px;
 }
 
 @media screen and (max-width: 770px) {
