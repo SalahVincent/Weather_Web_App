@@ -111,7 +111,7 @@
   height: 150px;
 }
 
-.cloud_box {
+.cloud-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,7 +246,7 @@
     height: 80px;
   }
 
-  .cloud_box {
+  .cloud-box {
     width: fit-content;
   }
 
