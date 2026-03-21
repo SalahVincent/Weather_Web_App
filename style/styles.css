@@ -260,7 +260,7 @@
 
 @media screen and (max-width: 770px) {
   #page {
-    background: linear-gradient(#ffffffe8, #00000096), url("images/weather_app_back.jpg");
+    background: linear-gradient(#ffffffe8, #00000096), url("../images/weather_app_back.png");
     padding: 0 5%;
   }
 
