@@ -225,6 +225,39 @@
   height: 30px;
 }
 
+.accessories {
+  display: flex;
+  flex-direction: row;
+}
+
+.location {
+  backdrop-filter: blur(1px);
+  background: linear-gradient(#f7f7f74b, #ffffffc2);
+  width: 15%;
+  height: 80%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.other-locations {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.location:hover {
+  transform: translateY(-50px) scale(2);
+  background: linear-gradient(#1f1f1f83);
+  z-index: 3;
+  color: white;
+}
+
+.error {
+  font-size: 20px;
+  color: red;
+}
+
+
 @media screen and (max-width: 770px) {
   #page {
     background: linear-gradient(#ffffffe8, #00000096), url("images/weather_app_back.jpg");
@@ -238,8 +271,9 @@
   }
 
   .temp-box {
-    font-size: 100px;
-    width: fit-content;
+    font-size: 70px;
+    height: 150px;
+    border-radius: 30px;
   }
 
   .thermometer {
@@ -248,48 +282,44 @@
 
   .cloud-box {
     width: fit-content;
+    padding: 0 30px;
   }
 
   .cloud-desc-box p {
     font-size: 30px;
   }
 
-  .hum_desc {
-    display: flex;
-    justify-content: start;
-    overflow: scroll;
+  .hum-desc {
   }
-}
 
-.other-locations {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .bar {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
 
-.location {
-  backdrop-filter: blur(1px);
-  background: linear-gradient(#f7f7f74b, #ffffffc2);
-  width: 15%;
-  height: 80%;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: 0.2s;
-}
+  .search-form {
+    width: 100%;
+  }
 
-.location:hover {
-  transform: translateY(-50px) scale(2);
-  background: linear-gradient(#1f1f1f83);
-  z-index: 3;
-  color: white;
-}
+  .accessories {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.accessories {
-  display: flex;
-  flex-direction: row;
-}
+  .location-sec {
+    width: 90%;
+  }
 
-.error {
-  font-size: 20px;
-  color: red;
+  .other-locations {
+    flex-direction: column;
+    height: auto;
+    padding: 5% 0;
+  }
+
+  .location {
+    width: 80%;
+    height: 100px;
+    margin: 1% 0;
+  }
 }

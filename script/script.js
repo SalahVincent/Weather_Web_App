@@ -1,6 +1,6 @@
 const apiKey = '9812bbeafe26b05f0d4fbc85d7838872'
-const searchForm = document.querySelector('.search_form')
-const cityInput = document.querySelector('.input_city')
+const searchForm = document.querySelector('.search-form')
+const cityInput = document.querySelector('.input-city')
 const card = document.querySelector('.error')
 const temperature = document.querySelector('.temp1')
 const water = document.querySelector('.water')
@@ -66,8 +66,8 @@ function displayWeatherInfo(data) {
   descriptionDisplay.textContent = `${description}`
 
   humidityDisplay.classList.add('humidity')
-  windDisplay.classList.add('wind_speed')
-  descriptionDisplay.classList.add('weather_desc')
+  windDisplay.classList.add('wind-speed')
+  descriptionDisplay.classList.add('weather-desc')
 
   place.appendChild(cityDisplay)
   temperature.appendChild(tempDisplay)
@@ -88,7 +88,7 @@ function displayError(message) {
   errorDisplay.textContent = message
   errorDisplay.classList.add('errorDisplay')
 
-  card.textContent = ""
+  card.textContent = ''
   card.style.display = 'flex'
   card.appendChild(errorDisplay)
 }
